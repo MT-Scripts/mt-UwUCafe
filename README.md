@@ -29,7 +29,7 @@ https://youtu.be/xruCsYASgBQ
 	["frango"] 		       = {["name"] = "frango", 			    ["label"] = "Chicken", 				["weight"] = 1500, 	 ["type"] = "item", 	["image"] = "frango.png", 	    ["unique"] = false, 	["useable"] = true,   ["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = ""},
 
 	-- Foods
-	["cupcake-morango"] 	 = {["name"] = "cupcake-morango"	["label"] = "Strawberry Cupcake", 	["weight"] = 1000, 	["type"] = "item", 	 ["image"] = "cupmorango.png", 		["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = ""},
+	["cupcake-morango"] 	 = {["name"] = "cupcake-morango",	["label"] = "Strawberry Cupcake", 	["weight"] = 1000, 	["type"] = "item", 	 ["image"] = "cupmorango.png", 		["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = ""},
 	["cupcake-chocolate"] 	 = {["name"] = "cupcake-chocolate", ["label"] = "Chocolate Cupcake", 	["weight"] = 1000, 	["type"] = "item", 	 ["image"] = "cupchocolate.png", 	["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = ""},
 	["cupcake-limao"] 		 = {["name"] = "cupcake-limao", 	["label"] = "Lemon Cupcake", 		["weight"] = 1000, 	["type"] = "item", 	 ["image"] = "cuplimao.png", 		["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = ""},
 	["gelado-morango"] 		 = {["name"] = "gelado-morango", 	["label"] = "Strawberry Icecream", 	["weight"] = 1000, 	["type"] = "item", 	 ["image"] = "gemorango.png", 		["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = ""},
