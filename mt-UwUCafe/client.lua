@@ -682,6 +682,7 @@ end
 ----- Use food/drinks ---------
 
 RegisterNetEvent('mt-UwUCafe:client:ComerCupcake', function() -- Eat Cupcake
+    food = math.random(40, 70)
     TriggerEvent('animations:client:EmoteCommandStart', {"uwusandy"})
     QBCore.Functions.Progressbar('comer_cupcake', 'EATING A CUPCAKE...', 5000, false, true, {
         disableMovement = false,
@@ -689,13 +690,15 @@ RegisterNetEvent('mt-UwUCafe:client:ComerCupcake', function() -- Eat Cupcake
         disableMouse = false,
         disableCombat = true,
     }, {}, {}, {}, function()
-        TriggerServerEvent("QBCore:Server:SetMetaData", "hunger", QBCore.Functions.GetPlayerData().metadata["hunger"] + math.random(40, 70))
+        TriggerServerEvent("QBCore:Server:SetMetaData", "hunger", QBCore.Functions.GetPlayerData().metadata["hunger"] + food)
+        TriggerServerEvent("consumables:server:addHunger", QBCore.Functions.GetPlayerData().metadata["hunger"] + food)
         TriggerServerEvent('hud:server:RelieveStress', math.random(2, 4))
         TriggerEvent('animations:client:EmoteCommandStart', {"c"})
     end)
 end)
 
 RegisterNetEvent('mt-UwUCafe:client:ComerPastel', function() -- Eat Chicken Pastel
+    food = math.random(40, 70)
     TriggerEvent('animations:client:EmoteCommandStart', {"sandwich"})
     QBCore.Functions.Progressbar('comer_pastel', 'EATING A PASTEL...', 5000, false, true, {
         disableMovement = false,
@@ -703,13 +706,15 @@ RegisterNetEvent('mt-UwUCafe:client:ComerPastel', function() -- Eat Chicken Past
         disableMouse = false,
         disableCombat = true,
     }, {}, {}, {}, function()
-        TriggerServerEvent("QBCore:Server:SetMetaData", "hunger", QBCore.Functions.GetPlayerData().metadata["hunger"] + math.random(40, 70))
+        TriggerServerEvent("QBCore:Server:SetMetaData", "hunger", QBCore.Functions.GetPlayerData().metadata["hunger"] + food)
+        TriggerServerEvent("consumables:server:addHunger", QBCore.Functions.GetPlayerData().metadata["hunger"] + food)
         TriggerServerEvent('hud:server:RelieveStress', math.random(2, 4))
         TriggerEvent('animations:client:EmoteCommandStart', {"c"})
     end)
 end)
 
 RegisterNetEvent('mt-UwUCafe:client:ComerMuffin', function() -- Eat muffin
+    food = math.random(40, 70)
     TriggerEvent('animations:client:EmoteCommandStart', {"uwusandy"})
     QBCore.Functions.Progressbar('comer_muffin', 'EATING A MUFFIN...', 5000, false, true, {
         disableMovement = false,
@@ -717,13 +722,15 @@ RegisterNetEvent('mt-UwUCafe:client:ComerMuffin', function() -- Eat muffin
         disableMouse = false,
         disableCombat = true,
     }, {}, {}, {}, function()
-        TriggerServerEvent("QBCore:Server:SetMetaData", "hunger", QBCore.Functions.GetPlayerData().metadata["hunger"] + math.random(40, 70))
+        TriggerServerEvent("QBCore:Server:SetMetaData", "hunger", QBCore.Functions.GetPlayerData().metadata["hunger"] + food)
+        TriggerServerEvent("consumables:server:addHunger", QBCore.Functions.GetPlayerData().metadata["hunger"] + food)
         TriggerServerEvent('hud:server:RelieveStress', math.random(2, 4))
         TriggerEvent('animations:client:EmoteCommandStart', {"c"})
     end)
 end)
 
 RegisterNetEvent('mt-UwUCafe:client:ComerWaffle', function() -- Eat Waffle
+    food = math.random(40, 70)
     TriggerEvent('animations:client:EmoteCommandStart', {"sandwich"})
     QBCore.Functions.Progressbar('comer_waffle', 'EATING A WAFFLE...', 5000, false, true, {
         disableMovement = false,
@@ -731,13 +738,15 @@ RegisterNetEvent('mt-UwUCafe:client:ComerWaffle', function() -- Eat Waffle
         disableMouse = false,
         disableCombat = true,
     }, {}, {}, {}, function()
-        TriggerServerEvent("QBCore:Server:SetMetaData", "hunger", QBCore.Functions.GetPlayerData().metadata["hunger"] + math.random(40, 70))
+        TriggerServerEvent("QBCore:Server:SetMetaData", "hunger", QBCore.Functions.GetPlayerData().metadata["hunger"] + food)
+        TriggerServerEvent("consumables:server:addHunger", QBCore.Functions.GetPlayerData().metadata["hunger"] + food)
         TriggerServerEvent('hud:server:RelieveStress', math.random(2, 4))
         TriggerEvent('animations:client:EmoteCommandStart', {"c"})
     end)
 end)
 
 RegisterNetEvent('mt-UwUCafe:client:ComerGelado', function() -- Eat icecream
+    food = math.random(40, 70)
     TriggerEvent('animations:client:EmoteCommandStart', {"uwusandy"})
     QBCore.Functions.Progressbar('comer_gelado', 'EATING A GELADO...', 5000, false, true, {
         disableMovement = false,
@@ -745,13 +754,15 @@ RegisterNetEvent('mt-UwUCafe:client:ComerGelado', function() -- Eat icecream
         disableMouse = false,
         disableCombat = true,
     }, {}, {}, {}, function()
-        TriggerServerEvent("QBCore:Server:SetMetaData", "hunger", QBCore.Functions.GetPlayerData().metadata["hunger"] + math.random(20, 50))
+        TriggerServerEvent("QBCore:Server:SetMetaData", "hunger", QBCore.Functions.GetPlayerData().metadata["hunger"] + food)
+        TriggerServerEvent("consumables:server:addHunger", QBCore.Functions.GetPlayerData().metadata["hunger"] + food)
         TriggerServerEvent('hud:server:RelieveStress', math.random(2, 4))
         TriggerEvent('animations:client:EmoteCommandStart', {"c"})
     end)
 end)
 
 RegisterNetEvent('mt-UwUCafe:client:ComerPanqueca', function() -- Eat pancake
+    food = math.random(40, 70)
     TriggerEvent('animations:client:EmoteCommandStart', {"sandwich"})
     QBCore.Functions.Progressbar('comer_panqueca', 'DRINKING A PANCAKE...', 5000, false, true, {
         disableMovement = false,
@@ -759,13 +770,15 @@ RegisterNetEvent('mt-UwUCafe:client:ComerPanqueca', function() -- Eat pancake
         disableMouse = false,
         disableCombat = true,
     }, {}, {}, {}, function()
-        TriggerServerEvent("QBCore:Server:SetMetaData", "hunger", QBCore.Functions.GetPlayerData().metadata["hunger"] + math.random(30, 60))
+        TriggerServerEvent("QBCore:Server:SetMetaData", "hunger", QBCore.Functions.GetPlayerData().metadata["hunger"] + food)
+        TriggerServerEvent("consumables:server:addHunger", QBCore.Functions.GetPlayerData().metadata["hunger"] + food)
         TriggerServerEvent('hud:server:RelieveStress', math.random(2, 4))
         TriggerEvent('animations:client:EmoteCommandStart', {"c"})
     end)
 end)
 
 RegisterNetEvent('mt-UwUCafe:client:BeberBubbleTea', function() -- Drink bubble Tea
+    food = math.random(40, 70)
     TriggerEvent('animations:client:EmoteCommandStart', {"cup"})
     QBCore.Functions.Progressbar('beber_bubbletea', 'DRINKING A BUBBLE TEA...', 5000, false, true, {
         disableMovement = false,
@@ -773,12 +786,14 @@ RegisterNetEvent('mt-UwUCafe:client:BeberBubbleTea', function() -- Drink bubble 
         disableMouse = false,
         disableCombat = true,
     }, {}, {}, {}, function()
-        TriggerServerEvent("QBCore:Server:SetMetaData", "thirst", QBCore.Functions.GetPlayerData().metadata["thirst"] + math.random(30, 50))
+        TriggerServerEvent("QBCore:Server:SetMetaData", "thirst", QBCore.Functions.GetPlayerData().metadata["thirst"] + food)
+        TriggerServerEvent("consumables:server:addThirst", QBCore.Functions.GetPlayerData().metadata["thirst"] + food)
         TriggerEvent('animations:client:EmoteCommandStart', {"c"})
     end)
 end)
 
 RegisterNetEvent('mt-UwUCafe:client:BeberMilkshake', function() -- Drink Milkshake
+    food = math.random(40, 70)
     TriggerEvent('animations:client:EmoteCommandStart', {"cup"})
     QBCore.Functions.Progressbar('beber_milkshake', 'DRINKING A MILKSHAKE...', 5000, false, true, {
         disableMovement = false,
@@ -786,12 +801,14 @@ RegisterNetEvent('mt-UwUCafe:client:BeberMilkshake', function() -- Drink Milksha
         disableMouse = false,
         disableCombat = true,
     }, {}, {}, {}, function()
-        TriggerServerEvent("QBCore:Server:SetMetaData", "thirst", QBCore.Functions.GetPlayerData().metadata["thirst"] + math.random(30, 50))
+        TriggerServerEvent("QBCore:Server:SetMetaData", "thirst", QBCore.Functions.GetPlayerData().metadata["thirst"] + food)
+        TriggerServerEvent("consumables:server:addThirst", QBCore.Functions.GetPlayerData().metadata["thirst"] + food)
         TriggerEvent('animations:client:EmoteCommandStart', {"c"})
     end)
 end)
 
 RegisterNetEvent('mt-UwUCafe:client:BeberCafe', function() -- Drink Coffee
+    food = math.random(40, 70)
     TriggerEvent('animations:client:EmoteCommandStart', {"coffee"})
     QBCore.Functions.Progressbar('beber_cafe', 'DRINKING A COFFEE...', 5000, false, true, {
         disableMovement = false,
@@ -799,13 +816,15 @@ RegisterNetEvent('mt-UwUCafe:client:BeberCafe', function() -- Drink Coffee
         disableMouse = false,
         disableCombat = true,
     }, {}, {}, {}, function()
-        TriggerServerEvent("QBCore:Server:SetMetaData", "thirst", QBCore.Functions.GetPlayerData().metadata["thirst"] + math.random(30, 50))
+        TriggerServerEvent("QBCore:Server:SetMetaData", "thirst", QBCore.Functions.GetPlayerData().metadata["thirst"] + food)
+        TriggerServerEvent("consumables:server:addThirst", QBCore.Functions.GetPlayerData().metadata["thirst"] + food)
         TriggerEvent('animations:client:EmoteCommandStart', {"c"})
         TriggerServerEvent('hud:server:RelieveStress', math.random(20, 40))
     end)
 end)
 
 RegisterNetEvent('mt-UwUCafe:client:BeberLatte', function() -- Drink Latte
+    food = math.random(40, 70)
     TriggerEvent('animations:client:EmoteCommandStart', {"coffee"})
     QBCore.Functions.Progressbar('beber_latte', 'DRINKING A LATTE...', 5000, false, true, {
         disableMovement = false,
@@ -813,7 +832,8 @@ RegisterNetEvent('mt-UwUCafe:client:BeberLatte', function() -- Drink Latte
         disableMouse = false,
         disableCombat = true,
     }, {}, {}, {}, function()
-        TriggerServerEvent("QBCore:Server:SetMetaData", "thirst", QBCore.Functions.GetPlayerData().metadata["thirst"] + math.random(30, 50))
+        TriggerServerEvent("QBCore:Server:SetMetaData", "thirst", QBCore.Functions.GetPlayerData().metadata["thirst"] + food)
+        TriggerServerEvent("consumables:server:addThirst", QBCore.Functions.GetPlayerData().metadata["thirst"] + food)
         TriggerEvent('animations:client:EmoteCommandStart', {"c"})
         TriggerServerEvent('hud:server:RelieveStress', math.random(10, 30))
     end)
